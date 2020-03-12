@@ -35,10 +35,10 @@ public class ConnectorConfig {
       private Connector createHttpConnector() {
         Connector connector =
           new Connector("org.apache.coyote.http11.Http11NioProtocol");
-        connector.setScheme("http");
-        connector.setSecure(false);
-        connector.setPort(8098);
-        connector.setRedirectPort(8098);
+        connector.setScheme("https");
+        connector.setSecure(true);
+        connector.setPort(8099);
+        connector.setRedirectPort(8099);
         return connector;
       }
 }
